@@ -1,0 +1,48 @@
+/* ----------- Import Tailwind -----*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ----------- Default Styles to apply to the whole project  --------- */
+
+@layer base {
+
+    h1, h2, h3, h4  {
+        @apply font-serif mb-[0.5em];
+    }
+
+    h1 {
+        @apply text-3xl leading-tight;
+    }
+    h2 {
+        @apply text-2xl leading-tight;
+    }
+    h3 {
+        @apply text-xl leading-tight;
+    }
+
+    h3 {
+        @apply text-lg leading-tight;
+    }
+    h4 {
+        @apply text-lg leading-tight;
+    }
+
+    p {
+        @apply mb-[0.5em] leading-normal;
+    }
+
+  }
+
+
+/* ----------- ADDITIONAL COMPONENTS  --------- */
+
+@layer components {
+
+    .button  {
+        @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white ;
+    }
+    
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJvdXRwdXQtc3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogLS0tLS0tLS0tLS0gSW1wb3J0IFRhaWx3aW5kIC0tLS0tKi9cbkB0YWlsd2luZCBiYXNlO1xuQHRhaWx3aW5kIGNvbXBvbmVudHM7XG5AdGFpbHdpbmQgdXRpbGl0aWVzO1xuXG5cbi8qIC0tLS0tLS0tLS0tIERlZmF1bHQgU3R5bGVzIHRvIGFwcGx5IHRvIHRoZSB3aG9sZSBwcm9qZWN0ICAtLS0tLS0tLS0gKi9cblxuQGxheWVyIGJhc2Uge1xuXG4gICAgaDEsIGgyLCBoMywgaDQgIHtcbiAgICAgICAgQGFwcGx5IGZvbnQtc2VyaWYgbWItWzAuNWVtXTtcbiAgICB9XG5cbiAgICBoMSB7XG4gICAgICAgIEBhcHBseSB0ZXh0LTN4bCBsZWFkaW5nLXRpZ2h0O1xuICAgIH1cbiAgICBoMiB7XG4gICAgICAgIEBhcHBseSB0ZXh0LTJ4bCBsZWFkaW5nLXRpZ2h0O1xuICAgIH1cbiAgICBoMyB7XG4gICAgICAgIEBhcHBseSB0ZXh0LXhsIGxlYWRpbmctdGlnaHQ7XG4gICAgfVxuXG4gICAgaDMge1xuICAgICAgICBAYXBwbHkgdGV4dC1sZyBsZWFkaW5nLXRpZ2h0O1xuICAgIH1cbiAgICBoNCB7XG4gICAgICAgIEBhcHBseSB0ZXh0LWxnIGxlYWRpbmctdGlnaHQ7XG4gICAgfVxuXG4gICAgcCB7XG4gICAgICAgIEBhcHBseSBtYi1bMC41ZW1dIGxlYWRpbmctbm9ybWFsO1xuICAgIH1cblxuICB9XG5cblxuLyogLS0tLS0tLS0tLS0gQURESVRJT05BTCBDT01QT05FTlRTICAtLS0tLS0tLS0gKi9cblxuQGxheWVyIGNvbXBvbmVudHMge1xuXG4gICAgLmJ1dHRvbiAge1xuICAgICAgICBAYXBwbHkgaW5saW5lLWJsb2NrIHB4LTQgcHktMiB1cHBlcmNhc2UgdHJhY2tpbmctd2lkZSBiZy16aW5jLTgwMCB0ZXh0LXdoaXRlIDtcbiAgICB9XG4gICAgXG59Il19 */
