@@ -25,7 +25,7 @@
     }
 
     h1 {
-        @apply text-8xl leading-tight;
+        @apply leading-tight text-8xl;
     }
     h2 {
         @apply text-2xl leading-tight;
@@ -38,14 +38,17 @@
         @apply text-lg leading-tight;
     }
     h4 {
-        @apply text-lg leading-tight font-sans;
+        @apply font-sans text-lg leading-tight;
     }
 
     p {
         @apply mb-[0.5em] leading-normal;
     }
     nav a {
-        @apply tracking-wide uppercase pr-4;
+        @apply pr-4 tracking-wide uppercase;
+    }
+    footer a {
+        display: block;
     }
   }
 
@@ -54,6 +57,60 @@
 @layer components {
 
     .button  {
-        @apply inline-block px-4 py-2 uppercase tracking-wide bg-copper text-white ;
+        @apply inline-block px-4 py-2 tracking-wide uppercase bg-copper text-light ;
     }
+
+    #momence-plugin-host-schedule {
+        @apply bg-light;
+    }
+    
+}
+
+/* Styles to Apply to all pluggin contents */
+#momence-embed #momence-plugin-host-schedule * {
+    @apply font-sans font-light rounded-none text-copper border-copper;
+} 
+
+
+/* "Classes" Embed Title */
+#momence-embed #momence-plugin-host-schedule .momence-event_type_select-button {
+    color: #C97324;
+}
+
+/* Book Now Button */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-booked_button {
+    @apply inline-block px-4 py-2 tracking-wide uppercase rounded-none bg-copper text-light;
+}
+
+/* Class Image */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-image {
+    display: none;
+}
+
+/* Class List Title */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-title {
+    color: #C97324;
+}
+
+/* Class Sub-title */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type {
+    display: none;
+}
+
+/* Teacher Info */
+#momence-embed #momence-plugin-host-schedule .momence-session-teacher {
+    display: none;
+}
+
+/* Navigation Buttons */
+#momence-embed #momence-plugin-host-schedule .momence-arrow-button {
+    border: none;
+}
+
+/* Entire Info Section */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-info {
+}
+
+#momence-embed #momence-plugin-host-schedule .kZOxIB {
+    display: none;
 }

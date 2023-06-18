@@ -1,7 +1,9 @@
 ---
 layout: default 
+hero: /assets/images/yoga-2.jpg
 heading: The Yoga Studio
 subheading: Welcome to
+hero_position: bg-center
 class: 
 - name: Bikram Hot Yoga
   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti!
@@ -11,10 +13,36 @@ class:
   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti!
 - name: Vinyasa Flow
   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti!
-
+testimonial:
+- pic: /assets/images/yoga-5.jpg
+  name: Duis Aute
+  copy: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis
+- pic: /assets/images/yoga-6.jpg
+  name: Duis Aute
+  copy: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis
+- pic: /assets/images/yoga-7.jpg
+  name: Duis Aute
+  copy: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis
 ---
 
 {% include yoga-squares.html %}
 
 {% include yoga-squares2.html %}
 
+<section class="md:p-5p py-5p">
+  <div class="max-w-screen-xl mx-auto">
+    <h2 class="text-4xl px-5p md:px-0">Testimonials</h2>
+    
+    <div class="flex overflow-x-scroll md:grid md:grid-cols-3 md:gap-6 md:px-0 px-5p flex-nowrap">
+    {% for item in page.testimonial limit:3 %}
+      <div class="flex-shrink-0 w-4/5 mr-4 text-center md:w-auto md:mr-0">
+        <div class="bg-[url('{{item.pic}}')] aspect-square bg-cover bg-center border"></div>
+        <h4 class="pt-4">{{item.name}}</h4>
+        <hr>
+        <p class="pt-4">{{item.copy}}</p>
+      </div>
+    {% endfor %}
+    </div>
+  
+  </div>
+</section>

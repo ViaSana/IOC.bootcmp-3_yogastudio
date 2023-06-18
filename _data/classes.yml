@@ -1,0 +1,16 @@
+class: 
+- name: Bikram Hot Yoga
+  pic: /assets/images/yoga-8.jpg
+  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti!
+- name: Mandala Yoga
+  pic: /assets/images/yoga-4.jpg
+  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti!
+- name: Chakra Flow 
+  pic: /assets/images/yoga-9.jpg
+  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti!
+- name: Vinyasa Flow
+  pic: /assets/images/yoga-9.jpg
+  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti!
+- name: Vinyasa Flow
+  pic: /assets/images/yoga-9.jpg
+  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti!

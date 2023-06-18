@@ -6,12 +6,13 @@
 <body>
 
     {% include top-nav.html %}
-    <section class="px-5p bg-[url('/assets/images/yoga-2.jpg')] bg-center bg-cover"> 
+    
+    <section class="px-5p max-w-screen-xl mx-auto bg-[url('{{page.hero}}')] {{page.hero_position}} {{page.hero_offset}} bg-cover border-b"> 
         <div class="flex items-center min-h-90">
-            <div class="">
+            <div class="{% if page.hero_offset %} -{{page.hero_offset}} {%endif%}">
                 <hr class="w-[60%] mb-4 border-1 -ml-[5vw]">
                 {% if page.subheading %}
-                    <h2 class="uppercase text-md">{{page.subheading}}</h2>
+                    <h4 class="uppercase text-md">{{page.subheading}}</h4>
                 {% endif %}
                 <h1 class="mb-0">{{page.heading}}</h1>
             </div>
@@ -20,6 +21,7 @@
 
     {{content}}
 
+    {% include footer.html %}
 </body>
 
 </html>
