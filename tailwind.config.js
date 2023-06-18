@@ -8,9 +8,17 @@ module.exports = {
     ],
     theme: {
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        serif: ['Italiana', 'serif'],
+        sans: ['Poppins', 'sans-serif'],
+        serif: ['Oranienbaum', 'serif'],
       },
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        'white': '#ffffff',
+        'copper': '#C97324',
+        'light' : '#FBF2E9',
+      },        
+
       extend: {
         spacing: {
           '5p': '5%',

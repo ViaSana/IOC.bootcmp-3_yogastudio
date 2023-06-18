@@ -8,12 +8,24 @@
 
 @layer base {
 
+    body {
+        @apply text-copper;
+    }
+
+    /* html {
+        @apply border-8 border-white sm:border-[#3522e1] md:border-[#96209a] lg:border-copper
+    }
+
+    div, nav, header, section {
+        border: 1px solid white
+    } */
+
     h1, h2, h3, h4  {
         @apply font-serif mb-[0.5em];
     }
 
     h1 {
-        @apply text-3xl leading-tight;
+        @apply text-8xl leading-tight;
     }
     h2 {
         @apply text-2xl leading-tight;
@@ -26,22 +38,22 @@
         @apply text-lg leading-tight;
     }
     h4 {
-        @apply text-lg leading-tight;
+        @apply text-lg leading-tight font-sans;
     }
 
     p {
         @apply mb-[0.5em] leading-normal;
     }
-
+    nav a {
+        @apply tracking-wide uppercase pr-4;
+    }
   }
-
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
 @layer components {
 
     .button  {
-        @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white ;
+        @apply inline-block px-4 py-2 uppercase tracking-wide bg-copper text-white ;
     }
-    
 }

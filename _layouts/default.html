@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     {% include head.html %}
-    
 </head>
-
 <body>
-    
-    <header> This is your header </header> 
+
+    {% include top-nav.html %}
+    <section class="px-5p bg-[url('/assets/images/yoga-2.jpg')] bg-center bg-cover"> 
+        <div class="flex items-center min-h-90">
+            <div class="">
+                <hr class="w-[60%] mb-4 border-1 -ml-[5vw]">
+                {% if page.subheading %}
+                    <h2 class="uppercase text-md">{{page.subheading}}</h2>
+                {% endif %}
+                <h1 class="mb-0">{{page.heading}}</h1>
+            </div>
+        </div>
+    </section> 
 
     {{content}}
-
-	<footer> This is your footer </footer> 
 
 </body>
 

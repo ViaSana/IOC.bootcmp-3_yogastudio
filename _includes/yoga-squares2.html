@@ -1,0 +1,22 @@
+<section class="border-t-2">
+    <div class="md:grid grid-cols-4 min-h-60">
+        <div class="flex border-b-2 col-span-2 bg-cover bg-center aspect-square md:aspect-auto bg-[url('/assets/images/yoga-4.jpg')]">
+            <div class="text-white self-end p-[5vw]">
+                <h2 class="text-6xl">Our Classes</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti, corrupti voluptatibus vel reiciendis maiores pariatur facilis dolores rem perspiciatis accusantium optio at nisi quidem!</p>
+                <a class="button mt-2" href="#">Find Out More</a>
+            </div>
+        </div>
+
+        <div class="col-span-2 grid grid-cols-2 border-l-2">
+            {% for item in page.class %}
+            <div class="p-8 flex border-r-2 border-b-2">
+                <div class="self-end">
+                    <h2 class="text-3xl">{{item.name}}</h2>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
