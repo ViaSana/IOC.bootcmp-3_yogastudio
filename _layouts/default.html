@@ -5,7 +5,9 @@
 </head>
 <body>
 
-    {% include top-nav.html %}
+    <!-- {% include top-nav.html %} -->
+
+    {% include burger-nav.html %}
     
     <section class="px-5p max-w-screen-xl mx-auto bg-[url('{{page.hero}}')] {{page.hero_position}} {{page.hero_offset}} bg-cover"> 
         <div class="flex items-center min-h-90">
@@ -18,11 +20,21 @@
             </div>
         </div>
     </section> 
+
+
     <div class="border-t">
         {{content}}
     </div>
-    
+
     {% include footer.html %}
+
+    <!-- Javascript -->
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script src="/main.js"></script>
+
 </body>
 
 </html>
