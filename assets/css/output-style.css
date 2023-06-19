@@ -493,6 +493,9 @@ footer a {
 .-ml-\[5vw\] {
   margin-left: -5vw;
 }
+.-mt-2 {
+  margin-top: -0.5rem;
+}
 .-mt-5 {
   margin-top: -1.25rem;
 }
@@ -581,8 +584,8 @@ footer a {
 .self-end {
   align-self: flex-end;
 }
-.overflow-x-scroll {
-  overflow-x: scroll;
+.overflow-x-auto {
+  overflow-x: auto;
 }
 .border {
   border-width: 1px;
@@ -604,6 +607,14 @@ footer a {
 }
 .border-t-2 {
   border-top-width: 2px;
+}
+.border-copper {
+  --tw-border-opacity: 1;
+  border-color: rgb(201 115 36 / var(--tw-border-opacity));
+}
+.border-light {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 242 233 / var(--tw-border-opacity));
 }
 .bg-\[\#000000\]\/30 {
   background-color: rgb(0 0 0 / 0.3);
@@ -691,6 +702,10 @@ footer a {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 .py-4 {
   padding-top: 1rem;
@@ -833,6 +848,39 @@ footer a {
 #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type,
 #momence-embed #momence-plugin-host-schedule .momence-session-teacher {
     display: none;
+}
+.placeholder\:uppercase::-moz-placeholder {
+  text-transform: uppercase;
+}
+.placeholder\:uppercase::placeholder {
+  text-transform: uppercase;
+}
+.placeholder\:text-copper::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+.placeholder\:text-copper::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+.hover\:border:hover {
+  border-width: 1px;
+}
+.hover\:bg-copper:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+}
+.hover\:bg-light:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+}
+.hover\:text-copper:hover {
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+.hover\:text-light:hover {
+  --tw-text-opacity: 1;
+  color: rgb(251 242 233 / var(--tw-text-opacity));
 }
 @media (min-width: 640px) {
   .sm\:col-span-2 {

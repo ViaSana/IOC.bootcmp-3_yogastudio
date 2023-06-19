@@ -7,7 +7,7 @@
 
     {% include top-nav.html %}
     
-    <section class="px-5p max-w-screen-xl mx-auto bg-[url('{{page.hero}}')] {{page.hero_position}} {{page.hero_offset}} bg-cover border-b"> 
+    <section class="px-5p max-w-screen-xl mx-auto bg-[url('{{page.hero}}')] {{page.hero_position}} {{page.hero_offset}} bg-cover"> 
         <div class="flex items-center min-h-90">
             <div class="{% if page.hero_offset %} -{{page.hero_offset}} {%endif%}">
                 <hr class="w-[60%] mb-4 border-1 -ml-[5vw]">
@@ -18,9 +18,10 @@
             </div>
         </div>
     </section> 
-
-    {{content}}
-
+    <div class="border-t">
+        {{content}}
+    </div>
+    
     {% include footer.html %}
 </body>
 
