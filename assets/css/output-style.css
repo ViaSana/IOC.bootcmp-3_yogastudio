@@ -482,6 +482,9 @@ footer a {
 }
 .button {
   display: inline-block;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(201 115 36 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(201 115 36 / var(--tw-bg-opacity));
   padding-left: 1rem;
@@ -492,6 +495,13 @@ footer a {
   letter-spacing: 0.025em;
   --tw-text-opacity: 1;
   color: rgb(251 242 233 / var(--tw-text-opacity));
+}
+.button:hover {
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
 }
 .absolute {
   position: absolute;
@@ -505,20 +515,20 @@ footer a {
 .right-0 {
   right: 0px;
 }
-.right-2 {
-  right: 0.5rem;
-}
 .right-5p {
   right: 5%;
+}
+.right-6 {
+  right: 1.5rem;
 }
 .top-0 {
   top: 0px;
 }
-.top-5p {
-  top: 5%;
+.top-8 {
+  top: 2rem;
 }
-.right-6 {
-  right: 1.5rem;
+.top-16 {
+  top: 4rem;
 }
 .col-span-10 {
   grid-column: span 10 / span 10;
@@ -599,6 +609,12 @@ footer a {
 .h-12 {
   height: 3rem;
 }
+.max-h-\[3rem\] {
+  max-height: 3rem;
+}
+.max-h-12 {
+  max-height: 3rem;
+}
 .min-h-60 {
   min-height: 60vh;
 }
@@ -631,9 +647,6 @@ footer a {
 }
 .flex-shrink-0 {
   flex-shrink: 0;
-}
-.shrink {
-  flex-shrink: 1;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -704,10 +717,6 @@ footer a {
 }
 .border-t-2 {
   border-top-width: 2px;
-}
-.border-copper {
-  --tw-border-opacity: 1;
-  border-color: rgb(201 115 36 / var(--tw-border-opacity));
 }
 .border-light {
   --tw-border-opacity: 1;
@@ -824,15 +833,18 @@ footer a {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-.py-\[24px\] {
-  padding-top: 24px;
-  padding-bottom: 24px;
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .pr-0 {
   padding-right: 0px;
 }
 .pt-4 {
   padding-top: 1rem;
+}
+.text-left {
+  text-align: left;
 }
 .text-center {
   text-align: center;
@@ -978,17 +990,14 @@ footer a {
   --tw-bg-opacity: 1;
   background-color: rgb(201 115 36 / var(--tw-bg-opacity));
 }
-.hover\:bg-light:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
-}
-.hover\:text-copper:hover {
-  --tw-text-opacity: 1;
-  color: rgb(201 115 36 / var(--tw-text-opacity));
-}
 .hover\:text-light:hover {
   --tw-text-opacity: 1;
   color: rgb(251 242 233 / var(--tw-text-opacity));
+}
+@media not all and (min-width: 768px) {
+  .max-md\:hidden {
+    display: none;
+  }
 }
 @media (min-width: 640px) {
   .sm\:col-span-2 {
@@ -996,20 +1005,17 @@ footer a {
   }
 }
 @media (min-width: 768px) {
-  .md\:absolute {
-    position: absolute;
-  }
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
   }
   .md\:mr-0 {
     margin-right: 0px;
   }
-  .md\:flex {
-    display: flex;
-  }
   .md\:grid {
     display: grid;
+  }
+  .md\:hidden {
+    display: none;
   }
   .md\:aspect-auto {
     aspect-ratio: auto;
@@ -1041,9 +1047,6 @@ footer a {
   }
   .md\:pb-\[75\%\] {
     padding-bottom: 75%;
-  }
-  .md\:text-left {
-    text-align: left;
   }
   .md\:bg-blend-normal {
     background-blend-mode: normal;

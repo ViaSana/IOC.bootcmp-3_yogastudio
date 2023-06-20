@@ -1,10 +1,27 @@
-<header class="top-0 left-0 right-0 justify-between max-w-screen-xl py-8 mx-auto text-center md:flex px-5p md:absolute md:text-left">
+<header class="absolute top-0 left-0 right-0 flex items-center justify-between max-w-screen-xl py-8 mx-auto text-left px-5p">
         <h2 class="mb-0 font-serif text-2xl">
             <a href="/">The Yoga Studio</a> 
         </h2>
-        <nav class="py-4 md:p-0">
+
+        <!-- Normal Menu -->
+        <nav class="py-4 max-md:hidden md:p-0">
             <a href="/classes.html">Our Classes</a>
             <a href="/schedule.html">Schedule</a>
             <a class="pr-0" href="/contact.html">Contact</a>
         </nav>
+
+        <!-- Burger Menu -->
+        <div class="absolute flex items-center justify-center w-12 h-12 rounded-full cursor-pointer md:hidden top-16 right-5p burger-button bg-light">
+            <nav class="absolute w-0 h-12 overflow-hidden rounded-l-full opacity-0 bg-light burger-menu right-6">
+              <a href="/classes" class="opacity-0 px-2 py-[12px] inline-block">Classes</a>
+              <a href="/schedule" class="opacity-0 px-2 py-[12px] inline-block">Schedule</a>
+              <a href="/contact" class="opacity-0 px-2 py-[12px] inline-block">Contact</a>
+            </nav>
+            <div class="relative space-y-2 burger-line">
+                <div class="w-8 h-0.5 bg-copper"></div>
+                <div class="w-8 h-0.5 bg-copper"></div>
+                <div class="w-8 h-0.5 bg-copper"></div>
+            </div>
+         </div>
+
 </header>

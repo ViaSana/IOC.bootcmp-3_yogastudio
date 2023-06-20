@@ -11,7 +11,7 @@ heading: Our Classes
         <div class="grid gap-6 md:grid-cols-3 ">
         {% for item in site.data.classes.class limit:3 %}
             <div class="p-4 text-center border break-inside-avoid">
-                <div class="bg-[url('{{item.pic}}')] aspect-square bg-cover bg-center border"></div>
+                <div class="bg-[url('{{item.pic}}')] aspect-square bg-cover bg-center border scroll-in-from-bottom"></div>
                 <h4 class="pt-4">{{item.name}}</h4>
                 <hr class="w-full">
                 <p class="py-4 mb-0">{{item.description}}</p>

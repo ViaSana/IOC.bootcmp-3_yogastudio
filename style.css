@@ -50,7 +50,7 @@
 @layer components {
 
     .button  {
-        @apply inline-block px-4 py-2 tracking-wide uppercase bg-copper text-light ;
+        @apply inline-block px-4 py-2 tracking-wide uppercase border bg-copper text-light hover:bg-light hover:border border-copper hover:text-copper;
     }
     
 }
