@@ -14,8 +14,8 @@ const burgerLines = document.querySelector('.burger-line')
 let tl = gsap.timeline({ duration:1, }
     ).to(burgerMenu, {width: "23rem", opacity: 1, padding: '0 2rem',}
     ).to('.burger-menu a', {opacity: 1,
-    //stagger:.35
-    })
+    stagger:.35
+    },.8)
 
 tl.pause();
 
@@ -47,7 +47,6 @@ function toggleBurgerMenu() {
 // finally link it to the click action of the burger button
 burgerButton.addEventListener('click', toggleBurgerMenu)
 
-
 // SCROLL JS //
 //  first we are finding all of the elements that have a class of scroll-in-from-bottom
 const headings = document.querySelectorAll(".scroll-in-from-bottom")
@@ -73,7 +72,5 @@ headings.forEach(object => {
     }).from(object,{
         y:300,
         opacity:0
-    }).from(object,{
-        rotate:360,
     })
 })

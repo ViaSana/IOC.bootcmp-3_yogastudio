@@ -524,9 +524,6 @@ footer a {
 .top-0 {
   top: 0px;
 }
-.top-8 {
-  top: 2rem;
-}
 .top-16 {
   top: 4rem;
 }
@@ -579,12 +576,6 @@ footer a {
 .mt-4 {
   margin-top: 1rem;
 }
-.line-clamp-1 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-}
 .block {
   display: block;
 }
@@ -608,15 +599,6 @@ footer a {
 }
 .h-12 {
   height: 3rem;
-}
-.h-8 {
-  height: 2rem;
-}
-.max-h-\[3rem\] {
-  max-height: 3rem;
-}
-.max-h-12 {
-  max-height: 3rem;
 }
 .min-h-60 {
   min-height: 60vh;
@@ -644,9 +626,6 @@ footer a {
 }
 .w-full {
   width: 100%;
-}
-.w-0\.5 {
-  width: 0.125rem;
 }
 .max-w-screen-xl {
   max-width: 1280px;
@@ -690,11 +669,6 @@ footer a {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .self-end {
   align-self: flex-end;
@@ -808,6 +782,10 @@ footer a {
 .p-\[5vw\] {
   padding: 5vw;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .px-28 {
   padding-left: 7rem;
   padding-right: 7rem;
@@ -847,10 +825,6 @@ footer a {
 .py-\[12px\] {
   padding-top: 12px;
   padding-bottom: 12px;
-}
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 .pr-0 {
   padding-right: 0px;
