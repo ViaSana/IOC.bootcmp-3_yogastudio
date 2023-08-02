@@ -1,16 +1,13 @@
 class: 
-- name: Bikram Hot Yoga
+- name: Hot Yoga
   pic: /assets/images/yoga-8.jpg
-  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti!
+  description: Sweat through 26 signature poses in a room heated to 105°F for a total body strengthening workout.
 - name: Mandala Yoga
   pic: /assets/images/yoga-4.jpg
-  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti!
+  description: Align your chakras with a meditative sequence focused on geometric poses and spiritual mantras.
 - name: Chakra Flow 
   pic: /assets/images/yoga-9.jpg
-  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti!
+  description: Open your chakras with a sequence of poses energizing each energy center through music and breathwork.
 - name: Vinyasa Flow
   pic: /assets/images/yoga-9.jpg
-  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti!
-- name: Vinyasa Flow
-  pic: /assets/images/yoga-9.jpg
-  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti!
+  description: Link movement and breath in a vigorous, dynamically sequenced practice generating internal heat.

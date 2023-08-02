@@ -1,15 +1,15 @@
 <section class="max-w-screen-xl mx-auto border-t-2">
     <div class="grid-cols-4 md:grid min-h-60">
-        <div class="scroll-in-from-bottom bg-[#000000]/30 bg-blend-overlay md:bg-blend-normal flex border-b-2 col-span-2 bg-cover bg-center aspect-square md:aspect-auto bg-[url('/assets/images/yoga-4.jpg')]">
+        <div class="scroll-in-from-bottom bg-[#000000]/30 bg-blend-overlay flex border-b-2 col-span-2 bg-cover bg-center aspect-square md:aspect-auto bg-[url('/assets/images/yoga-1.jpg')]">
             <div class="text-light self-end p-[5vw]">
                 <h2 class="text-4xl">Our Classes</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ab repudiandae veniam officiis deleniti, corrupti voluptatibus vel reiciendis maiores pariatur facilis dolores rem perspiciatis accusantium optio at nisi quidem!</p>
+                <p>Our diverse schedule caters to all levels with offerings including candlelit Yin for relaxation, powerful Vinyasa flows for strength, and meditation for inner peace. Not sure where to begin? Try Hatha for gentle alignment or Beginner Level classes to learn the foundations. Grow your practice over time under the guidance of our experienced teachers. We provide modifications so you can safely challenge yourself as you progress from Beginner to Intermediate to Advanced levels. Discover which styles resonate most with your body and spirit by sampling our broad range of classes.</p>              
                 <a class="mt-2 button" href="#">Find Out More</a>
             </div>
         </div>
 
         <div class="grid grid-cols-2 col-span-2 border-l-2">
-            {% for item in page.class %}
+            {% for item in site.data.classes.class %}
             <div class="flex p-8 border-b-2 border-r-2">
                 <div class="self-end">
                     <h2 class="text-3xl">{{item.name}}</h2>

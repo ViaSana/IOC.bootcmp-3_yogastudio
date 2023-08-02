@@ -725,6 +725,9 @@ footer a {
 .bg-transparent {
   background-color: transparent;
 }
+.bg-\[url\(\'\/assets\/images\/yoga-1\.jpg\'\)\] {
+  background-image: url('/assets/images/yoga-1.jpg');
+}
 .bg-\[url\(\'\/assets\/images\/yoga-2\.jpg\'\)\] {
   background-image: url('/assets/images/yoga-2.jpg');
 }
@@ -825,6 +828,9 @@ footer a {
 .py-\[12px\] {
   padding-top: 12px;
   padding-bottom: 12px;
+}
+.pb-4 {
+  padding-bottom: 1rem;
 }
 .pr-0 {
   padding-right: 0px;
@@ -989,13 +995,19 @@ footer a {
   }
 }
 @media (min-width: 640px) {
+  .sm\:top-5 {
+    top: 1.25rem;
+  }
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .sm\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
 }
 @media (min-width: 768px) {
-  .md\:col-span-3 {
-    grid-column: span 3 / span 3;
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
   }
   .md\:mr-0 {
     margin-right: 0px;
@@ -1037,12 +1049,4 @@ footer a {
   .md\:pb-\[75\%\] {
     padding-bottom: 75%;
   }
-  .md\:bg-blend-normal {
-    background-blend-mode: normal;
-  }
 }
-
-
-
-
-

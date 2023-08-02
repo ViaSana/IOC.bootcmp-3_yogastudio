@@ -67,7 +67,7 @@ headings.forEach(object => {
         // now this is the most important line of code its what turns the triggers from a start point in to locking it to the scroll
         scrub: true,
         // last but not least this helps us to visualize the script
-        markers: true,
+        markers: false,
       }
     }).from(object,{
         y:300,
